@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit route by ID"
+                android:textSize="100px"
+                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/route_id_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:hint="Route's ID"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"/>
+                    <EditText
+                        android:id="@+id/route_name_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:hint="Route's name"
+                        android:inputType="text"
+                        android:imeOptions="actionNext"/>
+                    <EditText
+                        android:id="@+id/departure_date_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:hint="Departure date"
+                        android:inputType="date"
+                        android:imeOptions="actionNext"/>
+                    <EditText
+                        android:id="@+id/arrival_date_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:hint="Arrival date"
+                        android:inputType="date"
+                        android:imeOptions="actionDone"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/edit_confirmation_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickEditConfirmationButton"
+                    android:text="Apply"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
